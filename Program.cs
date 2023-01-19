@@ -33,19 +33,22 @@ reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 
 Reserva reserva2 = new Reserva(diasReservados: 10);
-reserva.CadastrarSuite(suite2);
-reserva.CadastrarHospedes(hospedes2);
+reserva2.CadastrarSuite(suite2);
+reserva2.CadastrarHospedes(hospedes2);
 
 Reserva reserva3 = new Reserva(diasReservados: 15);
-reserva.CadastrarSuite(suite3);
-reserva.CadastrarHospedes(hospedes3);
+reserva3.CadastrarSuite(suite3);
+reserva3.CadastrarHospedes(hospedes3);
 
 // Exibe a quantidade de hóspedes e o valor da diária
-Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
-
-Console.WriteLine($"Hóspedes: {reserva2.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Valor diária: {reserva2.CalcularValorDiaria()}");
-
-Console.WriteLine($"Hóspedes: {reserva3.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Valor diária: {reserva3.CalcularValorDiaria()}");
+Console.WriteLine($"Suíte {suite.TipoSuite}:");
+Console.WriteLine($"Quantidade de Hóspedes: {reserva.ObterQuantidadeHospedes()}");
+Console.WriteLine($"Valor das Diárias: {reserva.CalcularValorDiaria()}");
+Console.WriteLine(); ;
+Console.WriteLine($"Suíte {suite2.TipoSuite}:");
+Console.WriteLine($"Quantidade deHóspedes: {reserva2.ObterQuantidadeHospedes()}");
+Console.WriteLine($"Valor das Diárias: {reserva2.CalcularValorDiaria()}");
+Console.WriteLine();
+Console.WriteLine($"Suíte {suite3.TipoSuite}:");
+Console.WriteLine($"Quantidade deHóspedes: {reserva3.ObterQuantidadeHospedes()}");
+Console.WriteLine($"Valor das Diárias: {reserva3.CalcularValorDiaria()}");
