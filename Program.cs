@@ -38,7 +38,7 @@ reserva.CadastrarHospedes(hospedes2);
 
 Reserva reserva3 = new Reserva(diasReservados: 15);
 reserva.CadastrarSuite(suite3);
-reserva.CadastrarHospedes(hospedes2);
+reserva.CadastrarHospedes(hospedes3);
 
 // Exibe a quantidade de hóspedes e o valor da diária
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
